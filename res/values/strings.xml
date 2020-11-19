@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lifecycle</string>
+    //text
+    <string name="topNameA_text">Activity A</string>
+    <string name="topNameB_text">Activity B</string>
+    <string name="topNameC_text">Activity C</string>
+    //Button
+    <string name="startA_button">Start A</string>
+    <string name="finishA_button">Finish A</string>
+    <string name="startB_button">Start B</string>
+    <string name="finishB_button">Finish B</string>
+    <string name="startC_button">Start C</string>
+    <string name="finishC_button">Finish C</string>
+    <string name="dialog_button">Dialog</string>
+</resources>
