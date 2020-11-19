@@ -1,6 +1,5 @@
 package com.example.lifecycle;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -146,16 +145,6 @@ public class MainActivity extends AppCompatActivity {
         mSave("dataABC",mStatusABC);//此时保存总记录ABC文件
         mStatusB=mLoad("dataB");
         mStatusC=mLoad("dataC");
-        String TempB="Activity B:onPause( )";
-        String TempC="Activity C:onPause( )";
-        if(mStatusB.equals(TempB)){
-            mStatusB="Activity B:onStop( )";
-            mStatusABC=mStatusB+'\n'+mStatusABC;
-        }
-        if(mStatusC.equals(TempC)){
-            mStatusC="Activity C:onStop( )";
-            mStatusABC=mStatusC+'\n'+mStatusABC;
-        }
 
         if(!mStatusB.equals("")&&!mStatusC.equals(""))inputText=mStatusA+'\n'+mStatusB+'\n'+mStatusC;
         if(!mStatusB.equals("")&&mStatusC.equals(""))inputText=mStatusA+'\n'+mStatusB;

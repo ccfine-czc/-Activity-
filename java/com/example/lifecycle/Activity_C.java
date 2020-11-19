@@ -117,18 +117,6 @@ public class Activity_C extends AppCompatActivity{
         mStatusA=mLoad("dataA");
         mStatusB=mLoad("dataB");
 
-//        若在创建C时A的状态为暂停，则说明A启动C，而此时C正在运行，
-//        不会调用stop A，在C销毁时才有，故手工在此加上
-        String ExceptA="Activity A:onPause( )";
-        String ExceptB="Activity B:onPause( )";
-        if(mStatusA.equals(ExceptA)){
-            mStatusA="Activity A:onStop( )";
-            mStatusABC=mStatusA+'\n'+mStatusABC;
-        }
-        if(mStatusB.equals(ExceptB)){
-            mStatusB="Activity B:onStop( )";
-            mStatusABC=mStatusB+'\n'+mStatusABC;
-        }
         mActivityC_TextView1.setText(mStatusABC);
         if(!mStatusB.equals("")){
             inputText=mStatusA+'\n'+mStatusB+'\n'+mStatusC;
